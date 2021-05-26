@@ -1,4 +1,32 @@
  /**********************/
+ body {
+  background-color: #f2f7f5;
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+ background-color: #3BCEAC;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+ background-color: #FFD23F;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+ background-color: #EE4266;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+ background-color: #540D6E;
+  }
+}
+/***********************/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 *, *:before, *:after {
@@ -39,6 +67,43 @@
   height: 10vh;
   animation: change-background 12s ease infinite;
 }
+
+/**************top right****************************/
+.App-top-nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ 
+.App-top-nav > ul > li {
+  list-style-type: none;
+  text-align: center;
+  width: 99%;
+  margin: 2px;
+}
+
+
+.App-top-nav > ul > li > h5:hover {
+  background: #69b7eb;
+  list-style-type: #9745;
+  border-radius: 5px;
+  border: 2px solid #69b7eb;
+  
+  
+}
+
+.App-top-nav > ul > li > h5{
+  border-radius: 5px;
+  border: 2px solid green;
+  
+  
+}
+/***************separator*****************/
+.App-content-separator{
+  animation: change-background 12s ease infinite;
+  height: 10vh;
+}
+
 /************content****************/
 .App-content {
   height: auto;
@@ -50,16 +115,75 @@
 
 /**************content on the right*******************/
 .App-content-right {
-  width: 20vw;
-  /* background-color: darkgray; */
-   
-}
-/*************content on the left*******************/
-.App-content-left {
-  width: 80vw;  
+  width: 15vw;
   display: flex;
   flex-direction: column;
-  border-left: 2px solid green;
+   
+}
+.App-content-right {
+  /* display: none; */
+   
+}
+/**************nav right****************************/
+.App-content-right-nav ul{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+.App-content-right-nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.App-content-right-nav ul li h5:hover {
+  background: #69b7eb;
+  list-style-type: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #69b7eb;
+  border-right: 2px solid #69b7eb;
+
+}
+
+.App-content-right-nav ul li h5{
+  border-radius: 5px;
+  border-bottom: 2px solid green;
+  border-right: 2px solid green;
+  width: 65%;
+
+}
+ /************************nav 2 level**************************/
+.App-content-right-nav ul li ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.App-content-right-nav ul li ul {
+  /* display: none; */
+}
+.App-content-right-nav ul li h6:hover {
+  background: #69b7eb;
+  list-style-type: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #777;
+  border-right: 2px solid #777;
+}
+
+.App-content-right-nav ul li h6{
+  border-radius: 5px;
+  border-bottom: 2px solid #ee042b;
+  border-right: 2px solid #ee042b;
+  width: 65%;
+
+}
+
+
+/*************content on the left*******************/
+.App-content-left {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  
 
 }
 

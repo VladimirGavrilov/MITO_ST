@@ -13,9 +13,8 @@ function App(props) {
             TOP LINE
           </h2>
         </header>
-        <div className='App-content'>
-          <aside className='App-content-right'>
-            <nav>
+        <div className='App-top'>
+         <nav className='App-top-nav'>
               <ul>
                 <li><h5>melu p 1</h5></li>
                 <li><h5>melu p 2</h5></li>
@@ -27,6 +26,40 @@ function App(props) {
                 <li><h5>melu p 8</h5></li>
                 <li><h5>melu p 9</h5></li>
                 <li><h5>melu p 10</h5></li>
+              </ul>
+            </nav>
+        </div>
+        
+        <div className='App-content'>
+          <aside className='App-content-right'>
+            <nav className='App-content-right-nav'>
+              <ul>
+                <li><h5>melu p 1</h5>                
+                    <ul>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                    </ul>                  
+                </li>
+                <li>
+                  <h5>melu p 1</h5>
+                  <ul>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                      <li><h6>melu p 1</h6></li>
+                    </ul>
+                
+                </li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
+                <li><a href='#'><h5>melu p 1</h5></a></li>
               </ul>
             </nav>
           </aside>
@@ -55,7 +88,12 @@ function App(props) {
                 </section>
               </div>
             </div>
-            <div className='App-content-cards'>
+          </main>
+          
+          
+          </div>
+           <div className='App-content-separator'></div>
+          <div className='App-content-cards'>
               <section className='App-content-card'>
                 <h1>card 1</h1>
                 <p>
@@ -118,6 +156,7 @@ function App(props) {
               </section>
 
             </div>
+            <div className='App-content-separator'></div>
             <div className='App-content-banners'>
               <section className='App-content-banner'>
                 <a href="#">
@@ -199,10 +238,6 @@ function App(props) {
                 </a>
               </section>
             </div>           
-          </main>
-          
-          
-          </div>
                     
         <footer className='App-footer'>
           Copyright Gavrilov Wladimir
