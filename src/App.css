@@ -1,1 +1,54 @@
- /**/
+ /*****************all*******************/
+.App{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  font-style: italic;
+  font-family: Trattatello, fantasy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+/***header***/
+.App-header{
+  height: 10vh;
+  background-color: cornflowerblue;
+}
+/************content****************/
+.App-content{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+/**************content on the right*******************/
+.App-content-right{
+  width: 24vw;
+  background-color: darkgray;
+}
+/*************content on the left*******************/
+.App-content-left{
+  width: 76vw;
+  
+  display: flex;
+  flex-direction: column;
+}
+.App-content-on_and_two{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  background-color: limegreen;
+}
+/**********footer***************/
+.App-footer{
+  height: 10vh;
+  background-color: midnightblue;
+  color: aliceblue;
+}
