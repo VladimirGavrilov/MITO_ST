@@ -1,26 +1,47 @@
+ /**********************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/**/
+/*************animation****************/
+
+/* Keyframes */
+@keyframes change-background {
+  0% {
+    background: #69b7eb;
+  }
+  50% {
+    background: #b3dbd3;
+  }
+  100% {
+    background: #f4d6db;
+  }
+}
  /*****************all*******************/
-.App{
+.App {
   margin: 0;
   padding: 0;
 }
-.wrapper{
+.wrapper {
   width: 100vw;
-  height: 100vh;
-  font-style: italic;
-  font-family: Trattatello, fantasy;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
 }
 /***header***/
-.App-header{
+.App-header {
   height: 10vh;
-  background-color: cornflowerblue;
+  animation: change-background 12s ease infinite;
 }
 /************content****************/
-.App-content{
-  height: 100vh;
+.App-content {
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,27 +49,98 @@
 }
 
 /**************content on the right*******************/
-.App-content-right{
-  width: 24vw;
-  background-color: darkgray;
+.App-content-right {
+  width: 20vw;
+  /* background-color: darkgray; */
+   
 }
 /*************content on the left*******************/
-.App-content-left{
-  width: 76vw;
-  
+.App-content-left {
+  width: 80vw;  
   display: flex;
   flex-direction: column;
+  border-left: 2px solid green;
+
 }
-.App-content-on_and_two{
+
+.App-content-on_and_two {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  background-color: limegreen;
+  padding-left: 5px;
+  
+}
+
+.App-content-1col {
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+  margin: 10px;
+  width: 47%;
+  padding-left: 5px;
+}
+.App-content-2row {
+  border-radius: 20px;
+  margin: 10px;
+  width: 47%;
+  padding-left: 5px;
+}
+.App-content-2row section {
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+  padding-left: 5px;
+}
+
+
+/********Cards***/
+.App-content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.App-content-card {
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+  margin: 10px;
+  width: 250px;
+  padding-left: 5px;
+}
+
+/******Baners*********/
+.App-content-banners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.App-content-banner {
+  border: 2px solid yellowgreen;
+  border-radius: 20px;
+  margin: 10px;
+  /* width: 150px;
+  height: 150px; */
+  padding-left: 5px;
+}
+
+.App-content-banner > a > img {  
+  width: 150px;
+  height: 150px;  
 }
 /**********footer***************/
-.App-footer{
+.App-footer {
   height: 10vh;
   background-color: midnightblue;
   color: aliceblue;
 }
+
+
+
+
+
+

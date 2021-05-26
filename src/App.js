@@ -11,19 +11,28 @@ function App(props) {
         <header className='App-header'>
           <h2>
             TOP LINE
-      </h2>
+          </h2>
         </header>
         <div className='App-content'>
           <aside className='App-content-right'>
             <nav>
               <ul>
+                <li><h5>melu p 1</h5></li>
+                <li><h5>melu p 2</h5></li>
+                <li><h5>melu p 3</h5></li>
                 <li><h5>melu p 4</h5></li>
+                <li><h5>melu p 5</h5></li>
+                <li><h5>melu p 6</h5></li>
+                <li><h5>melu p 7</h5></li>
+                <li><h5>melu p 8</h5></li>
+                <li><h5>melu p 9</h5></li>
+                <li><h5>melu p 10</h5></li>
               </ul>
             </nav>
           </aside>
           <main className='App-content-left'>
             <div className='App-content-on_and_two'>
-              <div className='App-content-2col'>
+              <div className='App-content-1col'>
                 <section>
                   <h1>Съёмки фильма Полипропилен</h1>
                   <p>
@@ -45,12 +54,159 @@ function App(props) {
                       </p>
                 </section>
               </div>
-            </div>   
-          </main> 
-        </div>        
+            </div>
+            <div className='App-content-cards'>
+              <section className='App-content-card'>
+                <h1>card 1</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 2</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 3</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 4</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 5</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 6</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 7</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 8</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 9</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+              <section className='App-content-card'>
+                <h1>card 10</h1>
+                <p>
+                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
+                      </p>
+              </section>
+
+            </div>
+            <div className='App-content-banners'>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section><section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+              <section className='App-content-banner'>
+                <a href="#">
+                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
+                </a>
+              </section>
+            </div>           
+          </main>
+          
+          
+          </div>
+                    
         <footer className='App-footer'>
           Copyright Gavrilov Wladimir
-      </footer>
+        </footer>
     </div>    
   </div>
   );
