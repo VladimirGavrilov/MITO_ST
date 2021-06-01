@@ -6,68 +6,19 @@ import AppContentCards from './AppContentCards/AppContentCards';
 import AppContentBanners from './AppContentBanners/AppContentBanners';
 import AppContentArtWholly from './AppContentArt/AppContentArtWholly';
 import AppContentArtPreview from './AppContentArt/AppContentArtPreview';
+import AppContentRightNav from './AppNav/AppContentRightNav'
+import Header from './Header/Header';
+import AppTop from './AppTop';
 import './App.css';
-
 
 function App(props) {
   return (
   <div className='App'>
     <div className='wrapper'>
-        <header className='App-header'>
-          <h2>
-            TOP LINE
-          </h2>
-        </header>
-        <div className='App-top'>
-         <nav className='App-top-nav'>
-              <ul>
-                <li><h5>melu p 1</h5></li>
-                <li><h5>melu p 2</h5></li>
-                <li><h5>melu p 3</h5></li>
-                <li><h5>melu p 4</h5></li>
-                <li><h5>melu p 5</h5></li>
-                <li><h5>melu p 6</h5></li>
-                <li><h5>melu p 7</h5></li>
-                <li><h5>melu p 8</h5></li>
-                <li><h5>melu p 9</h5></li>
-                <li><h5>melu p 10</h5></li>
-              </ul>
-            </nav>
-        </div>
-        
+      <Header />      
+      <AppTop menuNavLinks= {state.NavLinks} />       
         <div className='App-content'>
-          <aside className='App-content-right'>
-            <nav className='App-content-right-nav'>
-              <ul>
-                <li><h5>melu p 1</h5>                
-                    <ul>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                    </ul>                  
-                </li>
-                <li>
-                  <h5>melu p 1</h5>
-                  <ul>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                      <li><h6>melu p 1</h6></li>
-                    </ul>
-                
-                </li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-                <li><a href='#'><h5>melu p 1</h5></a></li>
-              </ul>
-            </nav>
-          </aside>
+          <aside className='App-content-right'><AppContentRightNav menuNavLinks= {state.NavLinks}/></aside>
           <main className='App-content-left'>
             <div className='App-content-on_and_two'>
               <div className='App-content-1col'>
@@ -97,20 +48,14 @@ function App(props) {
         </div>
         <div className='App-content-separator'></div>
         <div className='App-content-articles'>
-              <AppContentArtWholly />
+              <AppContentArtWholly articleContent= {state.articles}/>
               <AppContentArtPreview />            
         </div>
         <div className='App-content-separator'></div>
-                <div className='App-content-cards'>
-                  <AppContentCards content= {state.cards}/>
-                </div>
+                <div className='App-content-cards'><AppContentCards content= {state.cards}/></div>
                 <div className='App-content-separator'></div>
-                <div className='App-content-banners'>
-                  <AppContentBanners banners= {state.banners}/>
-                </div>            
-                <footer className='App-footer'>
-                  Copyright Gavrilov Wladimir
-                </footer>
+                <div className='App-content-banners'><AppContentBanners banners= {state.banners}/></div>            
+                <footer className='App-footer'>Copyright Gavrilov Wladimir</footer>
             </div>    
           </div>
   );

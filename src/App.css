@@ -55,7 +55,7 @@
 .wrapper {
   width: 100vw;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -64,8 +64,17 @@
 }
 /***header***/
 .App-header {
-  height: 10vh;
   animation: change-background 12s ease infinite;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.App-header > div > h1 {
+  font-size: 2rem;
+  margin-top: 5%;
+  color: blue;
+  
 }
 
 /**************top right****************************/
@@ -83,7 +92,7 @@
 }
 
 
-.App-top-nav > ul > li > h5:hover {
+.App-top-nav > ul > li > a > h5:hover {
   background: #69b7eb;
   list-style-type: #9745;
   border-radius: 5px;
@@ -92,7 +101,7 @@
   
 }
 
-.App-top-nav > ul > li > h5{
+.App-top-nav > ul > li > a > h5{
   border-radius: 5px;
   border: 2px solid green;
   
@@ -121,6 +130,7 @@
    
 }
 .App-content-right {
+  color: #ee042b;
   /* display: none; */
    
 }
@@ -158,9 +168,11 @@
   flex-direction: column;
   justify-content: right;
 }
+/* 
 .App-content-right-nav ul li ul {
   /* display: none; */
-}
+/*} */
+
 .App-content-right-nav ul li h6:hover {
   background: #69b7eb;
   list-style-type: none;
