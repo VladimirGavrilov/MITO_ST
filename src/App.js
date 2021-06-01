@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import state from './redax/state'
+import AppContentCards from './AppContentCards/AppContentCards';
+import AppContentBanners from './AppContentBanners/AppContentBanners';
+import AppContentArtWholly from './AppContentArt/AppContentArtWholly';
+import AppContentArtPreview from './AppContentArt/AppContentArtPreview';
 import './App.css';
 
 
@@ -89,199 +94,25 @@ function App(props) {
               </div>
             </div>
           </main>
-          
-          
+        </div>
+        <div className='App-content-separator'></div>
+        <div className='App-content-articles'>
+              <AppContentArtWholly />
+              <AppContentArtPreview />            
+        </div>
+        <div className='App-content-separator'></div>
+                <div className='App-content-cards'>
+                  <AppContentCards content= {state.cards}/>
+                </div>
+                <div className='App-content-separator'></div>
+                <div className='App-content-banners'>
+                  <AppContentBanners banners= {state.banners}/>
+                </div>            
+                <footer className='App-footer'>
+                  Copyright Gavrilov Wladimir
+                </footer>
+            </div>    
           </div>
-            <div className='App-content-separator'></div>
-            <div className='App-content-articles'>
-              <div className='App-content-art-wholly'>
-                <article >
-                    <h1>Article wholly</h1>
-                    <p>
-                      Не следует, однако, забывать, что разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения касаемо системы обучения кадров, соответствующей насущным потребностям. Господа, перспективное планирование обеспечивает широкому кругу (специалистов) участие в формировании инновационных методов управления процессами. Есть над чем задуматься: представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть подвергнуты целой серии независимых исследований. В целом, конечно, социально-экономическое развитие в значительной степени обусловливает важность стандартных подходов. В своём стремлении улучшить пользовательский опыт мы упускаем, что базовые сценарии поведения пользователей, вне зависимости от их уровня, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Безусловно, консультация с широким активом требует анализа дальнейших направлений развития.
-                  </p>
-                    <p>
-                      Но выбранный нами инновационный путь создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса модели развития. С учётом сложившейся международной обстановки, перспективное планирование играет важную роль в формировании поэтапного и последовательного развития общества.
-
-                    </p>
-                    <p>
-                      А также предприниматели в сети интернет, инициированные исключительно синтетически, описаны максимально подробно. Но реплицированные с зарубежных источников, современные исследования, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут призваны к ответу.
-                    </p>
-                      <p>
-                        В целом, конечно, базовый вектор развития прекрасно подходит для реализации переосмысления внешнеэкономических политик. Прежде всего, консультация с широким активом влечет за собой процесс внедрения и модернизации благоприятных перспектив. Убеждённость некоторых оппонентов позволяет оценить значение первоочередных требований. В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники технического прогресса ограничены исключительно образом мышления. Каждый из нас понимает очевидную вещь: перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо стандартных подходов. Современные технологии достигли такого уровня, что синтетическое тестирование обеспечивает широкому кругу (специалистов) участие в формировании приоритизации разума над эмоциями.
-                    </p>
-                    <p>
-                      Равным образом, синтетическое тестирование создаёт предпосылки для кластеризации усилий. Имеется спорная точка зрения, гласящая примерно следующее: явные признаки победы институционализации будут преданы социально-демократической анафеме.
-                  </p>
-                </article>
-              </div>
-            <div className='App-content-art-preview'>
-            <article>
-            <h1>Article preview</h1>
-                  <p>
-                    История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                  </p>
-                  <button>Подробнее ></button>
-                </article>
-
-          </div>
-              
-
-            </div>
-
-
-<div className='App-content-separator'></div>
-          <div className='App-content-cards'>
-              <section className='App-content-card'>
-                <h1>card 1</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 2</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 3</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 4</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 5</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 6</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 7</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 8</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 9</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-              <section className='App-content-card'>
-                <h1>card 10</h1>
-                <p>
-                  История о том, как проходила студия изучения языка эсперанто, в то время, как над ней, на веранде велась студия приколистов, где травились анекдоты, и что из этого получилось.
-                      </p>
-              </section>
-
-            </div>
-            <div className='App-content-separator'></div>
-            <div className='App-content-banners'>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section><section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-              <section className='App-content-banner'>
-                <a href="#">
-                  <img src="https://kubsu.ru/sites/default/files/insert/page/mon_logo_0.png" alt="Пример"/>
-                </a>
-              </section>
-            </div>           
-                    
-        <footer className='App-footer'>
-          Copyright Gavrilov Wladimir
-        </footer>
-    </div>    
-  </div>
   );
 }
 
