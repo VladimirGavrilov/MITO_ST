@@ -1,18 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from "react-router-dom";
-// function addLi(props) {
-//   return(
-//     <li><a href={props.hrefNavLink}><h5>{props.nameNavLink}</h5></a></li>
-//   )
-// }
+
+
+function addList(myArr, fn) {
+  return myArr.map( (item) => fn(item))
+  
+}
+
+
+
+function addLi(parm) {
+   return(
+    <div><a href={parm.hrefNavLink}><h5>{parm.nameNavLink}</h5></a></div>
+  )
+}
 
  function AppNav(props) {
-    const menuNavLinks = props.NavLinks;
-    const navLinks = menuNavLinks.map( (item) => <li><a href={item.hrefNavLink}><h5>{item.nameNavLink}</h5></a></li> ) 
+   const NavLinks = props.NavLinks;
+    const navLinks = addList(NavLinks, addLi)
   return(
         <nav className= {props.navClass}>            
-            <ul>{navLinks}</ul>
+            <div>{navLinks}</div>
         </nav>
   )
 }

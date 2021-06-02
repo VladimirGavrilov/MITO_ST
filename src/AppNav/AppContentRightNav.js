@@ -5,7 +5,7 @@ import AppNav from './AppNav';
 
 function AppContentRightNav(props) {
   return(             
-    <AppNav NavLinks={props.menuNavLinks} navClass="App-content-right-nav"/>
+    <AppNav NavLinks={props.NavLinks} navClass="App-content-right-nav"/>
   )
 }
 export default AppContentRightNav;

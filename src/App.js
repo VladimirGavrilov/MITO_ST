@@ -6,29 +6,24 @@ import AppContentCards from './AppContentCards/AppContentCards';
 import AppContentBanners from './AppContentBanners/AppContentBanners';
 import AppContentArtWholly from './AppContentArt/AppContentArtWholly';
 import AppContentArtPreview from './AppContentArt/AppContentArtPreview';
-import AppContentRightNav from './AppNav/AppContentRightNav'
+import AppContentRight from './AppContent/AppContentRight'
+import AppContent1Col from './AppContent/AppContent1Col'
 import Header from './Header/Header';
 import AppTop from './AppTop';
 import './App.css';
+
 
 function App(props) {
   return (
   <div className='App'>
     <div className='wrapper'>
       <Header />      
-      <AppTop menuNavLinks= {state.NavLinks} />       
+      <AppTop NavLinks= {state.NavLinks} />       
         <div className='App-content'>
-          <aside className='App-content-right'><AppContentRightNav menuNavLinks= {state.NavLinks}/></aside>
+          <AppContentRight NavLinks={state.NavLinks}/>
           <main className='App-content-left'>
             <div className='App-content-on_and_two'>
-              <div className='App-content-1col'>
-                <section>
-                  <h1>Съёмки фильма Полипропилен</h1>
-                  <p>
-                    История о том, как снимали фильм, где герои отдыхали на пляже, потом пришёл антагонист, избил протагонистов, бросил их в бассейн, и что из этого получилось.
-                  </p>
-                </section>
-              </div>
+              <AppContent1Col contNews={state.contNews}/>
               <div className='App-content-2row'>
                 <section>
                   <h1>Хороший язык</h1>
