@@ -5,8 +5,8 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
      const content = props.content;
      const contentCard = content.map( (card) => 
             <section className='App-content-card'>
-                <h3>{card.cardTitlle}</h3>
-                <p>{card.cardContent}</p>
+                <h3>{card.titlle}</h3>
+                <p>{card.content}</p>
             </section>
               )     
      return (<div className='App-content-cards'>{contentCard} </div>)

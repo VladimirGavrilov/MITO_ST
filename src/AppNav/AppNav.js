@@ -12,8 +12,8 @@ function addList(myArr, fn) {
 
 function addLi(parm) {
    return(
-    <div><a href={parm.hrefNavLink}><h5>{parm.nameNavLink}</h5></a></div>
-  )
+    <div><Link to={parm.hrefNavLink}><h5>{parm.nameNavLink}</h5></Link></div>
+    )
 }
 
  function AppNav(props) {
