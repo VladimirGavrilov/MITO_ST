@@ -12,7 +12,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
                     </a>
             </section>
               )     
-     return (contentBanner )
+     return (<div className='App-content-banners'>{contentBanner}</div> )
 
 
  }

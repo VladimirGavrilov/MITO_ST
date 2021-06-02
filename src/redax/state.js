@@ -190,3 +190,7 @@ let state = {
 
 }
 export default state
+let croppingText = (txtB, contStr) => { return (txtB.split(".").slice(0, contStr).join('.')) }
+
+
+export { croppingText }

@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
                 <p>{card.cardContent}</p>
             </section>
               )     
-     return (contentCard )
+     return (<div className='App-content-cards'>{contentCard} </div>)
 
 
  }
